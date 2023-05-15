@@ -41,16 +41,19 @@ pistas = ["La ratonera deberia estar al lado del raton?",
             mostrarPista(pistas);
             })
 
-images.forEach(function(element, index) {
 
-    
+
+
+images.forEach(function(element, index) {
 
     element.addEventListener('click', ()=>{
         
         let valor = element.classList.value;
+        console.log(valor);
 
         objetos.forEach(function(objeto, index){
             var texto = objeto
+            console.log(texto.classList.value)
 
             if(texto.classList == "panel1" && valor == "img2"){
                 element.classList.add('active');

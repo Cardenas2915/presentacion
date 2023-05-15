@@ -1,69 +1,57 @@
 body {
-  background: linear-gradient(45deg, #040c79,rgb(97, 104, 107));
+  background-image: url("https://wallpapercave.com/wp/wp3182801.png");
   background-size: 100%;
   margin: 0;
 }
 
-.main__controls a{
-  text-decoration: none;
-}
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+      /* . Se utiliza para alinear horizontalmente los elementos dentro de un contenedor utilizando el modelo de caja flexible */
       -ms-flex-pack: center;
+      /* Estas propiedades son específicas para el motor de renderizado WebKit (utilizado en navegadores como Safari y antiguas versiones de Chrome).  */
           justify-content: center;
 }
 
 .header__title {
-  color: #fff;
+  color: #424242;
   font-family: "Architects Daughter", cursive;
   font-size: 7vh;
   font-weight: 700;
 }
 
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /* se utilizan para establecer el tipo de visualización  */
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
-  
 }
 
 .main__board {
-  display: -ms-grid;
   display: grid;
   height: 42vh;
-  -ms-grid-rows: (33%)[3];
-  -ms-grid-columns: (33%)[3];
-      grid-template: repeat(3, 33%)/repeat(3, 33%);
+  grid-template: repeat(3, 33%)/repeat(3, 33%);
+  /* d se utiliza para definir la plantilla de una cuadrícula utilizando el sistema de cuadrícula de CSS */
   min-height: 0;
   min-width: 0;
   width: 42vh;
 }
 
 .main__cell {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 0 solid #fff;
+
+  align-items: center;
+  border: 0 solid #424242;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
 }
 
 .main__cell--text {
-  color: #fff;
+  color: #424242;
   font-family: "Architects Daughter", cursive;
   font-size: 9vh;
   font-weight: bold;
@@ -72,18 +60,14 @@ body {
 }
 
 .main__controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .main__button {
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #424242;
   cursor: pointer;
   font-family: "Architects Daughter", cursive;
   font-size: 4vh;
@@ -91,6 +75,27 @@ body {
   margin-top: 5vh;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
+.footer__text {
+  position: fixed;
+  bottom: 0;
+}
 
+.footer__text--dev-name {
+  color: #424242;
+  font-family: "Architects Daughter", cursive;
+  font-size: 2.5vh;
+  font-weight: 500;
+}
+
+.footer__text--link {
+  color: #424242;
+  font-weight: bold;
+  text-decoration: none;
+}
 /*# sourceMappingURL=index.css.map */
