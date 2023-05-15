@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(45deg, #040c79,rgb(97, 104, 107));
+  background-size: 100%;
+  margin: 0;
+}
+
+.main__controls a{
+  text-decoration: none;
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__title {
+  color: #fff;
+  font-family: "Architects Daughter", cursive;
+  font-size: 7vh;
+  font-weight: 700;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.main__board {
+  display: -ms-grid;
+  display: grid;
+  height: 42vh;
+  -ms-grid-rows: (33%)[3];
+  -ms-grid-columns: (33%)[3];
+      grid-template: repeat(3, 33%)/repeat(3, 33%);
+  min-height: 0;
+  min-width: 0;
+  width: 42vh;
+}
+
+.main__cell {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0 solid #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main__cell--text {
+  color: #fff;
+  font-family: "Architects Daughter", cursive;
+  font-size: 9vh;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.main__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Architects Daughter", cursive;
+  font-size: 4vh;
+  font-weight: bold;
+  margin-top: 5vh;
+}
+
+
+
+/*# sourceMappingURL=index.css.map */
